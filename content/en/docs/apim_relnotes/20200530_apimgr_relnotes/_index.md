@@ -44,7 +44,7 @@ OpenSSL 1.1.1 does not support FIPS, and running API Gateway in FIPS mode is not
 References to FIPS in the documentation will not be removed, but this does not mean that FIPS is still supported and the references should be ignored.
 
 ### log4j2 changes
-The log4j 2 version has been updated from 2.8.2 to 2.13.2. In addition, the log4j 2 file format has been changed to use yaml format. As a result of this, any customization made to the following files (eventLog.xml,openTrafficLog.xml,eventLog.xml & log4j2.xml ) file we ship too in the list)- will now have to be added in yaml format to the new files  (listed)
+The log4j 2 version has been updated from 2.8.2 to 2.13.2. In addition, the log4j 2 file format has been changed to use yaml format. As a result of this, any customization made to the following files ( eventLog.xml, openTrafficLog.xml, eventLog.xml & log4j2.xml ) will now have to be added in yaml format to the new files  (listed)
 
 ## Deprecated features
 
