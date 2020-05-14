@@ -43,6 +43,9 @@ OpenSSL 1.1.1 does not support FIPS, and running API Gateway in FIPS mode is not
 
 References to FIPS in the documentation will not be removed, but this does not mean that FIPS is still supported and the references should be ignored.
 
+### log4j2 changes
+The log4j version has been bumped to 2.13.2
+
 ## Deprecated features
 
 <!-- Add features that are deprecated here -->
