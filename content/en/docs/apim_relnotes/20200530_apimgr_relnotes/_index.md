@@ -56,7 +56,7 @@ The log4j 2 version has been updated from 2.8.2 to 2.13.2. In addition, the log4
 
 
 
- will now have to be added in yaml format to the new files
+ will now have to be added in yaml format to the new files. ( listed above )
 
 ## Deprecated features
 
