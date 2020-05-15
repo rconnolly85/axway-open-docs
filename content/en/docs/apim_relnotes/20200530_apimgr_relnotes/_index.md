@@ -6,7 +6,6 @@
   "date": "2020-03-11",
   "description": "Learn about the new features and enhancements in this update of API Gateway and API Manager."
 }
-
 ## Summary
 
 API Gateway is available as a software installation or a virtualized deployment in Docker containers. API Manager is a licensed product running on top of API Gateway, and has the same deployment options as API Gateway.
@@ -44,15 +43,22 @@ OpenSSL 1.1.1 does not support FIPS, and running API Gateway in FIPS mode is not
 References to FIPS in the documentation will not be removed, but this does not mean that FIPS is still supported and the references should be ignored.
 
 ### log4j2 changes
+
 The log4j 2 version has been updated from 2.8.2 to 2.13.2. In addition, the log4j 2 file format has been changed to use yaml format. As a result of this, any customization made to the following files
- * $VDISTDIR/system/conf/loggers/ `eventLog.xml` 
- * $VDISTDIR/system/conf/loggers/ `openTrafficLog.xml` 
- * $VDISTDIR/system/conf/loggers/ `eventLog.xml`  
- * $VDISTDIR/system/conf/`log4j2.xml` 
- * $VDISTDIR/rcplatform/plugin-filter-base/lib/`log4j2.xml` 
+
+| Pre May Release | 7.7.0_20200530 Release |
+| --- | ----------- |
+| $VDISTIR/system/conf/loggers/eventLog.xml | $VDISTIR/system/conf/loggers/eventLog.yaml |
+| $VDISTDIR/system/conf/loggers/ `openTrafficLog.xml | $VDISTDIR/system/conf/loggers/ `openTrafficLog.yaml |
 
 
- will now have to be added in yaml format to the new files  (listed above) e.g `log4j2.xml - log4j2.yaml`
+* $VDISTDIR/system/conf/loggers/ `eventLog.xml` 
+* $VDISTDIR/system/conf/loggers/ `openTrafficLog.xml` 
+* $VDISTDIR/system/conf/loggers/ `eventLog.xml`  
+* $VDISTDIR/system/conf/`log4j2.xml` 
+* $VDISTDIR/rcplatform/plugin-filter-base/lib/`log4j2.xml` 
+
+ will now have to be added in yaml format to the new files
 
 ## Deprecated features
 
@@ -80,7 +86,7 @@ To stay current and align our offerings with customer demand and best practices,
 
 ## Fixed issues
 
-This version of API Gateway and API Manager includes the fixes from all 7.5.3, 7.6.2, and 7.7 service packs or updates released prior to this version. For details of all the service pack fixes included, see corresponding _SP Readme_ attached to each service pack on [Axway Support](https://support.axway.com).
+This version of API Gateway and API Manager includes the fixes from all 7.5.3, 7.6.2, and 7.7 service packs or updates released prior to this version. For details of all the service pack fixes included, see corresponding *SP Readme* attached to each service pack on [Axway Support](https://support.axway.com).
 
 ### Fixed security vulnerabilities
 
@@ -88,17 +94,17 @@ There are no fixed security vulnerabilities in this version.
 
 ### Other fixed issues
 
-| Internal ID | Case ID       | Description                                                                    |
-| ----------- | ------------- | ------------------------------------------------------------------------------ |
-|RDAPI-XXXXX|XXXXXX|**Issue**: Description of issue. **Resolution**: Description of resolution.|
+| Internal ID | Case ID | Description                                                                 |
+| ----------- | ------- | --------------------------------------------------------------------------- |
+| RDAPI-XXXXX | XXXXXX  | **Issue**: Description of issue. **Resolution**: Description of resolution. |
 
 ## Known issues
 
 The following are known issues for this update.
 
-| Internal ID | Description                                                                                                                                                        |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| RDAPI-XXXXX | Description of known issue                                                                                |
+| Internal ID | Description                |
+| ----------- | -------------------------- |
+| RDAPI-XXXXX | Description of known issue |
 
 ## Update a classic (non-container) deployment
 
@@ -215,11 +221,9 @@ For example:
 ./update_policy_studio.sh /opt/Axway-7.7/
 ```
 
-{{< alert title="Note" color="primary" >}}
-You must execute the update script using the same user who installed Policy Studio.
+{{< alert title="Note" color="primary" >}} You must execute the update script using the same user who installed Policy Studio.
 
-An update script is also available for Windows. It is called `update_policy_studio.bat` and it is located in the API Gateway 7.7 Policy Studio Update pack for Windows (`.zip`).
-{{< /alert >}}
+An update script is also available for Windows. It is called `update_policy_studio.bat` and it is located in the API Gateway 7.7 Policy Studio Update pack for Windows (`.zip`). {{< /alert >}}
 
 Running this script performs the following steps:
 
@@ -248,11 +252,9 @@ For example:
 ./update_configuration_studio.sh /opt/Axway-7.7/
 ```
 
-{{< alert title="Note" color="primary" >}}
-You must execute the update script using the same user who installed Configuration Studio.
+{{< alert title="Note" color="primary" >}} You must execute the update script using the same user who installed Configuration Studio.
 
-An update script is also available for Windows. It is called `update_configuration_studio.bat` and it is located in the API Gateway 7.7 Configuration Studio Update pack for Windows (`.zip`).
-{{< /alert >}}
+An update script is also available for Windows. It is called `update_configuration_studio.bat` and it is located in the API Gateway 7.7 Configuration Studio Update pack for Windows (`.zip`). {{< /alert >}}
 
 Running this script performs the following steps:
 
