@@ -45,10 +45,12 @@ References to FIPS in the documentation will not be removed, but this does not m
 
 ### log4j2 changes
 The log4j 2 version has been updated from 2.8.2 to 2.13.2. In addition, the log4j 2 file format has been changed to use yaml format. As a result of this, any customization made to the following files
- * eventLog.xml 
- * openTrafficLog.xml 
- * eventLog.xml 
- * log4j2.xml
+ * $VDISTDIR/system/conf/loggers eventLog.xml - eventLog.yaml
+ * $VDISTDIR/system/conf/loggers openTrafficLog.xml - openTrafficLog.yaml
+ * $VDISTDIR/system/conf/loggers eventLog.xml  - eventLog.yaml 
+ * $VDISTDIR/system/conf/log4j2.xml - log4j2.yaml
+ * $VDISTDIR/rcplatform/plugin-filter-base/lib/log4j2.xml - log4j2.yaml
+
 
  will now have to be added in yaml format to the new files  (listed above)
 
