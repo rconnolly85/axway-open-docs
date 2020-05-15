@@ -54,9 +54,7 @@ The log4j 2 version has been updated from 2.8.2 to 2.13.2. In addition, the log4
 | $VDISTDIR/system/conf/log4j2.xml                       | $VDISTDIR/system/conf/log4j2.yaml                       |
 | $VDISTDIR/rcplatform/plugin-filter-base/lib/log4j2.xml | $VDISTDIR/rcplatform/plugin-filter-base/lib/log4j2.yaml |
 
-
-
- will now have to be added in yaml format to the new files. ( listed above )
+ will now have to be added in yaml format.
 
 ## Deprecated features
 
